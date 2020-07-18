@@ -6,19 +6,10 @@ import Form from "./Form";
 
 function AuthenticationForm(props) {
   const [formData, setFormData] = useState({});
-  const action = data => {
-    switch (props.action) {
-      case "register":
-        return props.registerUser(data);
-      case "login":
-        return props.signInUser(data);
-      default:
-        console.log("Something went wrong");
-    }
-  };
   const onSubmit = e => {
     e.preventDefault();
-    action(formData)
+    props
+      .actionMethod(formData)
       .then(() => {
         props.history.push("/");
       })

@@ -26,11 +26,10 @@ export default function App() {
               path="/register"
               render={() => (
                 <AuthenticationForm
-                  action="register"
+                  actionMethod={registerUser}
                   formTitle="Registration"
                   buttonText="Register"
                   formStructure={registerForm}
-                  registerUser={registerUser}
                 />
               )}
             />
@@ -39,11 +38,10 @@ export default function App() {
               path="/login"
               render={() => (
                 <AuthenticationForm
-                  action="login"
+                  actionMethod={signInUser}
                   formTitle="Login"
                   buttonText="Login"
                   formStructure={loginForm}
-                  signInUser={signInUser}
                 />
               )}
             />
