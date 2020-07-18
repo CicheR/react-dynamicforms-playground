@@ -60,6 +60,12 @@ const fields = {
     name: "passwordConfirmation",
     text: "Password Confirmation",
     required: true
+  },
+  passwordPrevious: {
+    type: "password",
+    name: "passwordPrevious",
+    text: "Previous Password",
+    required: true
   }
 };
 
@@ -76,3 +82,9 @@ export const registerForm = [
 ];
 
 export const loginForm = [fields.email, fields.password];
+
+export const resetPasswordForm = [
+  fields.passwordPrevious,
+  fields.password,
+  fields.passwordConfrimation
+];

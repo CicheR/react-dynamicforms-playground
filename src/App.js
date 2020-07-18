@@ -1,8 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./UI/css/styles.css";
-import { registerForm, loginForm } from "./UI/FormFields";
-import { signInUser, registerUser } from "./UI/FormsActions";
+import { registerForm, loginForm, resetPasswordForm } from "./UI/FormFields";
+import { signInUser, registerUser, resetPassword } from "./UI/FormsActions";
 import Home from "./UI/Home";
 const Header = lazy(() => import("./UI/Header"));
 const AuthenticationForm = lazy(() => import("./UI/AuthenticationForm"));
@@ -42,6 +42,18 @@ export default function App() {
                   formTitle="Login"
                   buttonText="Login"
                   formStructure={loginForm}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/resetPassword"
+              render={() => (
+                <AuthenticationForm
+                  actionMethod={resetPassword}
+                  formTitle="Reset password"
+                  buttonText="Reset"
+                  formStructure={resetPasswordForm}
                 />
               )}
             />

@@ -15,6 +15,11 @@ export default function Home() {
             Register
           </Link>
         </li>
+        <li>
+          <Link exact activeClassName="current" to="/resetPassword">
+            Reset password
+          </Link>
+        </li>
       </ul>
     </nav>
   );
