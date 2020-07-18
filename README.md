@@ -8,4 +8,9 @@ Styles from [Jumping input text](https://codepen.io/nikstech/pen/xmMxpr)
 
 ---
 
+Branch `article-base`: Base project based on the article (with some work since the article is not a working-example). 
+Some more twiks/refactors will be added to `master` branch
+
+---
+
 Created with CodeSandbox
