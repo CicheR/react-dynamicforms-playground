@@ -20,7 +20,7 @@ export default function Form({
   return (
     <div>
       <form className={classes.box} onSubmit={onSubmit}>
-        <span className={classes.textCenter}>{formTitle}</span>
+        <span className={classes["text-center"]}>{formTitle}</span>
         {formStructure.map(f => (
           <Input
             key={f.name}
