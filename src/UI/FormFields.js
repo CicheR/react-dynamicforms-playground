@@ -88,3 +88,5 @@ export const resetPasswordForm = [
   fields.password,
   fields.passwordConfrimation
 ];
+
+export const recoverPasswordForm = [fields.email];

@@ -20,6 +20,11 @@ export default function Home() {
             Reset password
           </Link>
         </li>
+        <li>
+          <Link exact activeClassName="current" to="/recoverPassword">
+            Recover password
+          </Link>
+        </li>
       </ul>
     </nav>
   );

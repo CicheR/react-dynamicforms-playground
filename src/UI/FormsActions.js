@@ -12,3 +12,8 @@ export async function resetPassword(data) {
   console.log(data);
   alert("«« Reset password »» \n" + JSON.stringify(data, null, 2));
 }
+
+export async function recoverPassword(data) {
+  console.log(data);
+  alert("«« Recover Password »» \n" + JSON.stringify(data, null, 2));
+}
